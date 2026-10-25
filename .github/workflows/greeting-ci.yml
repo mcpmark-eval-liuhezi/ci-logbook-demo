@@ -1,0 +1,10 @@
+name: Greeting CI
+on:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: log the marker
+        run: echo "LOGBOOK-MARKER-42 greeting pipeline executed"
